@@ -9,12 +9,49 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play First experiment.</tw-noscript></noscript></tw-story>
-<tw-storydata name="First experiment" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="9E545A91-3A8F-4F0C-A459-0019EF01ADC7" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Should of stayed at home" tags="" position="525,325" size="100,100">Enter the wolf in sheeps clothing, just ahead on the yellow brick [[road]]</tw-passagedata><tw-passagedata pid="2" name="road" tags="" position="525,450" size="100,100">You&#39;re not alone. Never truly alone in the big bad woods. You swear you saw a Lion. 
+<tw-storydata name="First experiment" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="9E545A91-3A8F-4F0C-A459-0019EF01ADC7" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"><style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+
+tw-story {
+  font-family: "Montserrat Underline", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <400>;
+  font-style: normal;
+  background-color: #000; 
+}
+  
+}
+
+.story-image {
+  width: 100%;
+}
+
+tw-link, tw-link:link, tw-link:visited, tw-link.visited {
+  color: #FFF;
+  text-decoration: underline;
+}
+tw-link:focus, tw-link:hover, tw-link:active, tw-link.visited:hover {
+  color: #FFF;
+  text-decoration: none;
+}
+tw-passage {
+  padding-bottom: 200px;}
+
+img {  /* this selects all image (img) elements */
+  width: 100%;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Should of stayed at home" tags="" position="525,325" size="100,100">Enter the wolf in sheeps clothing, just ahead on the yellow brick [[road]]</tw-passagedata><tw-passagedata pid="2" name="road" tags="" position="525,450" size="100,100">You&#39;re not alone. Never truly alone in the big bad woods. You swear you saw a Lion. 
 (click-replace: &quot;Lion&quot;) [tin man]
 (click-replace: &quot;tin man&quot;) [straw man]
-(click-append: &quot;straw man&quot;) [ and a lion and a tin man]
+(click-append: &quot;straw man&quot;) [ and a [[lion]] and a [[tin man]]]
 
-&lt;img class=&quot;story-image&quot; src=&quot;&quot;C:\Users\User\Desktop\Digital-Writing\Digital-writing-for-twine\Images\yellow-brick-road-shutterstock.jpg.jpg&quot;&quot; alt=&quot;an example&quot; /&gt;</tw-passagedata></tw-storydata>
+[[&lt;img class=&quot;story-image&quot; src=&quot;&quot;C:\Users\User\Desktop\Digital-Writing\Digital-writing-for-twine\Images\yellow-brick-road-shutterstock.jpg.jpg&quot;&quot; alt=&quot;an example&quot; /&gt;-&gt;Another room]]
+
+&lt;img src=&quot;yellow-brick-road-shutterstock.jpg.jpg&quot; usemapp=&quot;#image-map&quot;&gt;
+&lt;map name=&quot;image-map&quot;&gt;
+&lt;area target=&quot;&quot; alt=&quot;tin man&quot; title=&quot;tin man&quot; href=&quot;&quot; coords=&quot;503,196,574,302&quot; shape=&quot;rect&quot;&gt;
+&lt;area target=&quot;&quot;alt=&quot;lion&quot; title=&quot;lion&quot; href=&quot;&quot; coords=&quot;634,499,711,597&quot; shape=&quot;0&quot;&gt;
+&lt;/map&gt;</tw-passagedata><tw-passagedata pid="3" name="Another room" tags="" position="525,575" size="100,100"></tw-passagedata><tw-passagedata pid="4" name="lion" tags="" position="650,575" size="100,100"></tw-passagedata><tw-passagedata pid="5" name="tin man" tags="" position="400,575" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
